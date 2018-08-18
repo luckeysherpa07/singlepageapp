@@ -3,3 +3,15 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.box-layout{
+  margin-top: 200px;
+}
+
+.btnholder{
+  margin: 0 auto;
+}
+
+.btncss{
+  margin: 5px auto;
+}
