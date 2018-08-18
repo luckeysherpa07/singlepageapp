@@ -12,13 +12,17 @@ ReactDOM.render(
     <BrowserRouter>
         <div class="container box-layout">
             <div class="row">
-                <div class="col">
-                    <Route path="/" component={Header}></Route>
+                <div class="col content-left">
+                    <div class="content-box">
+                        <Route path="/" component={Header}></Route>
+                    </div>
                 </div>
-                <div class="col">
-                    <Route path="/" exact component={Home}></Route>
-                    <Route path="/login" component={Login}></Route>
-                    <Route path="/about" component={About}></Route>
+                <div class="col-7 content-right">
+                    <div class="content-box">
+                        <Route path="/" exact component={Home}></Route>
+                        <Route path="/login" component={Login}></Route>
+                        <Route path="/about" component={About}></Route>
+                    </div>
                 </div>
             </div>
         </div>

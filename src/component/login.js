@@ -9,7 +9,14 @@ export default class Login extends React.Component{
                 </div>
                 <div class="row">
                     <blockquote class="blockquote text-center">
-                        <p>This is a place for the login page for the single page application in React JS.</p>
+                        <label>Email</label><br />
+                        <input type="email"></input> <br />
+
+                        <label>Password</label><br />
+                        <input type="password"></input><br />
+
+                        <input type="submit" value="submit"></input>
+
                     </blockquote>
                 </div>
             </div>

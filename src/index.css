@@ -1,11 +1,41 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Fanwood Text", Times, serif;
+  letter-spacing: 3px;
 }
 
 .box-layout{
-  margin-top: 200px;
+  margin-top: 120px;
+  margin-left: 100px;
+}
+
+h4{
+  text-decoration: none;
+  color: #333333;
+  margin-top: 20px;
+}
+
+h4:hover{
+  color: #23527c;
+}
+
+.content-left {
+  border-right: 1px solid #333;
+  height: 350px;
+}
+
+.content-right{
+  width: 500px;
+  margin-left: 100px;
+}
+
+.content-box{
+  margin-top: 70px;
+}
+
+.centeralign{
+  margin: 5px auto;
 }
 
 .btnholder{
