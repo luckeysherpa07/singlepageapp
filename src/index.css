@@ -45,3 +45,11 @@ h4:hover{
 .btncss{
   margin: 5px auto;
 }
+
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  position: absolute;
+}

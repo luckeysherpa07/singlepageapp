@@ -7,6 +7,7 @@ import Header from './component/header';
 import { BrowserRouter, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
+import { AnimatedSwitch } from 'react-router-transition';
 
 ReactDOM.render(
     <BrowserRouter>
@@ -19,9 +20,16 @@ ReactDOM.render(
                 </div>
                 <div class="col-7 content-right">
                     <div class="content-box">
-                        <Route path="/" exact component={Home}></Route>
-                        <Route path="/login" component={Login}></Route>
-                        <Route path="/about" component={About}></Route>
+                        <AnimatedSwitch
+                            atEnter={{ opacity: 0, damping: 22 }}
+                            atLeave={{ opacity: 0, damping: 22 }}
+                            atActive={{ opacity: 1, damping: 22 }}
+                            className="switch-wrapper"
+                        >
+                            <Route path="/" exact component={Home}></Route>
+                            <Route path="/login" component={Login}></Route>
+                            <Route path="/about" component={About}></Route>
+                        </AnimatedSwitch>
                     </div>
                 </div>
             </div>
