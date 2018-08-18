@@ -7,7 +7,7 @@ export default class Header extends React.Component{
         return (
             <div>
                 <div class="row centeralign">
-                    <h2>namespace{}</h2>
+                    <NavLink to="/" style={{ textDecoration: 'none' }}><h2>namespace;</h2></NavLink>
                 </div>
                 <div class="row">
                     <div class="btn-group-vertical btnholder">
